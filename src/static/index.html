@@ -35,8 +35,33 @@
               <!-- Activity options will be loaded here -->
             </select>
           </div>
+          <div class="form-group">
+            <label for="role">Role:</label>
+            <select id="role" required>
+              <option value="participant">Participant</option>
+              <option value="organizer">Organizer</option>
+              <option value="volunteer">Volunteer</option>
+            </select>
+          </div>
           <button type="submit">Sign Up</button>
         </form>
+
+        <h3>Upload Attendance</h3>
+        <form id="upload-form">
+          <div class="form-group">
+            <label for="upload-activity">Select Activity:</label>
+            <select id="upload-activity" required>
+              <option value="">-- Select an activity --</option>
+              <!-- Activity options will be loaded here -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="attendance-file">Attendance File:</label>
+            <input type="file" id="attendance-file" accept=".csv,.xlsx,.xlsm,.xltx,.xltm" required />
+          </div>
+          <button type="submit">Upload Attendance</button>
+        </form>
+
         <div id="message" class="hidden"></div>
       </section>
     </main>

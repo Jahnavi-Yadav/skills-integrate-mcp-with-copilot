@@ -93,11 +93,12 @@ section h3 {
 }
 
 .participants-section ul li {
-  padding: 4px 0;
+  padding: 6px 0;
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  gap: 10px;
   align-items: center;
-  justify-content: space-between;
 }
 
 /* Remove the bullet point pseudo-element */
@@ -106,8 +107,34 @@ section h3 {
 }
 
 .participant-email {
-  flex-grow: 1;
-  margin-right: 8px;
+  overflow-wrap: anywhere;
+}
+
+.participant-role {
+  color: #555;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.role-select {
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.update-role-btn {
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.update-role-btn:hover {
+  background-color: #0277bd;
 }
 
 .delete-btn {
